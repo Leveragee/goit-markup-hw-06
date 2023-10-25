@@ -71,11 +71,11 @@ background-color: #fff;
 .header-link { 
   font-family: "Roboto", sans-serif;
     color: #2e2f42;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
-    padding: 0;
+    padding: 18px 0;
     display: block;
     transition-property: color;
     transition-duration: 250ms;
