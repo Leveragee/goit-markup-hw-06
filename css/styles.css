@@ -32,7 +32,7 @@ img{    display: block;
   padding: 0 16px;
 }    
 .logo { 
-  padding: 16px 0;
+  padding: 0;
 background-color: #fff;
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -115,9 +115,10 @@ background-color: #fff;
 
 .adress-link {
     color: var(--SLATE, #434455);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.029em;
+    font-weight: 400;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -149,12 +150,12 @@ background-color: #fff;
   width: 100%;
   height: 100%;
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
   overflow: auto;
   transition-property: visible;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
 }
 .mob-menu-container {
   display: flex;
@@ -215,7 +216,7 @@ background-color: #fff;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 120% */
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
 }
 .all-header-icons {
   display: flex;
@@ -265,15 +266,19 @@ background-size: cover;
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .title-section {
+  .title {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office-mob-2x.jpg);
+      background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
   }
 }
 .title-container {
+  max-width: 240px; 
 }
 .hero-title {
     color: #ffffff;
@@ -282,7 +287,6 @@ background-size: cover;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    /* max-width: 496px; */
     margin: 0 auto 72px;
     text-transform: capitalize;
 display: flex;
@@ -326,7 +330,7 @@ display: flex;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
+ 
 }
 .features-list {  
   display: flex;
@@ -472,7 +476,7 @@ display: flex;
   /*Sections 3*/
   /*Sections 4*/
 .portfolio {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 .portfolio-container{
 
@@ -503,6 +507,11 @@ display: flex;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
       0px 1px 6px 0px rgba(46, 47, 66, 0.08);}
+  .portfolio-img {
+        display: block;
+            max-width: 100%;
+            height: auto;
+    }
 .portfolio-text {
     color: #2e2f42;
     font-size: 20px;
@@ -558,6 +567,7 @@ display: flex;
 .footer-container {
   }
 .left-footer {
+  margin-top: 17.5px;
    
     }
 .footer-logo {
@@ -609,7 +619,6 @@ display: flex;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-  margin-top: 72px;
   text-align: center;
 }
 .all-footer-icons {
@@ -665,7 +674,7 @@ display: flex;
     align-items: center;
     color: #ffffff;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5; /* 150% */
@@ -713,7 +722,6 @@ display: flex;
     position: fixed;
     top: 0;
     opacity: 0;
-    visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -721,7 +729,7 @@ display: flex;
   
   .is-open {
     opacity: 1;
-    visibility: hidden;
+    visibility: visible;
     pointer-events: auto;
   }
   .modal {
@@ -1014,7 +1022,6 @@ background-image: linear-gradient(
 flex-direction: row;
   justify-content: center;
   width: 736px;
-  gap: 24px; 
 }
 
 /* section team */
@@ -1107,18 +1114,28 @@ width: 360px;
 /*======Adaptive PC=====*/
   @media screen and (min-width: 1158px) {
     .container {
-      max-width: 1440px;
+      max-width: 1158px;
       padding: 0 15px;}
  /* section header*/
  .header-logo {
   margin-right: 76px;
  }
- ..address-list {
+ .adress {
+display: flex;
+ }
+ .adress-list {
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
- .
+ .adress-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ }
       /* section title*/
       .title {
         padding: 188px 0;
