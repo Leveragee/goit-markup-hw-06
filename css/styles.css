@@ -75,7 +75,7 @@ background-color: #fff;
     font-weight: 500;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
-    padding: 24px 0;
+    padding: 0;
     display: block;
     transition-property: color;
     transition-duration: 250ms;
